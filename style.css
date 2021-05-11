@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    background-color:  #0decfc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial,Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+h1{
+    font-size: 45px;
+    color: #fff;
+}
+canvas{
+    background: #f0f0f0;
+    display:block;
+    border-radius: 10px;
+}
+/* 按钮 */
+.btn{
+    cursor: pointer;
+    border: 0;
+    padding: 10px 20px;
+    background-color: rgb(214, 71, 36);
+    color: #fff;
+    border-radius: 5px;
+}
+.btn:focus{
+    outline: 0;
+}
+.btn:hover{
+    background:rgb(177, 104, 40);
+}
+.btn:active{
+    /* 形状缩小0.98 */
+    transform: scale(0.98);
+}
+.rules-btn{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.rules{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(212, 122, 94);
+    color: #fff;
+    min-height:100vh;
+    width: 365px;
+    padding: 20px;
+    line-height: 1.5;
+    transform: translateX(-365px);
+    transition: transform 1s ease-in-out;
+    z-index: 1;
+}
+.rules.show{
+    transform: translateX(0);
+}
+.start-game{
+    position: absolute;
+    top: 30px;
+    left: 130px;
+    width: 100px;
+}

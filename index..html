@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mamamiya</title>
+</head>
+
+<body>
+    <h1>By 韦兴奇</h1>
+    <!-- 规则 -->
+    <button id="rules-btn" class="btn rules-btn">规 则</button>
+    <div id="rules" class="rules">
+        <h2>规则很简单</h2>
+        <P>左:a / ←; 右:d / →</P>
+        <p>想追求刺激开启大写模式</p>
+        <br>
+        <p>
+            有手就能玩！
+        </p>
+        <p>
+            什么??!
+        </p>
+        <p>
+            你不会???
+        </p>
+        <p>
+            你不会自己百度吗？
+        </p>
+        <button id="close-btn" class="btn">关 闭</button>
+    </div>
+    <!-- 游戏界面 -->
+    <button id="start-game" class="btn start-game">开始游戏</button>
+    <canvas id="canvas" width="800" height="600">
+    </canvas>
+    <!-- 音效 -->
+    <audio src="game_sounds/btnClick.mp3" id="btn-click-sound"></audio>
+    <audio src="game_sounds/bgm1.wav" id="game-bgm"></audio>
+    <audio src="game_sounds/wallNock.wav" id="wall-nock"></audio>
+    <audio src="game_sounds/getScore.wav" id="get-score-sound"></audio>
+    <audio src="game_sounds/raket.wav" id="raket-sound"></audio>
+    <audio src="game_sounds/raketMove.wav" id="raket-move"></audio>
+    <audio src="game_sounds/fail.WAV" id="fail-sound"></audio>
+    <audio src="game_sounds/win.mp3" id="win-sound"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
